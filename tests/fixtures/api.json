@@ -1,0 +1,215 @@
+{
+ "brand_id": "5f00000000000000000000b1",
+ "runs": [
+  {
+   "run_at": "2026-11-18T08:00:00Z",
+   "keyword": [
+    [
+     {
+      "id": "6a0000000000000000000001",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000001",
+      "type": "image",
+      "title": "露营新手必看｜天幕怎么选",
+      "published_at": "2026-11-17T10:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a1",
+       "name": "露营日记A"
+      },
+      "metrics": {
+       "likes": 120,
+       "comments": 9,
+       "shares": 3,
+       "favorites": 80
+      }
+     },
+     {
+      "id": "6a0000000000000000000002",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000002",
+      "type": "video",
+      "title": "",
+      "published_at": "2026-11-16T07:30:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a2",
+       "name": "山野博主B"
+      },
+      "metrics": {
+       "likes": 5000,
+       "comments": 310,
+       "shares": 260,
+       "favorites": 4200
+      },
+      "text": "周末带娃露营全记录\n\n装备清单：天幕、蛋卷桌、折叠椅、炉头、气罐、睡袋、防潮垫……每一样都写了价格和踩过的坑，照着买不会错，收藏起来下次出发前对一遍。另外附上我们一家三口这两年去过的六个营地，哪里有热水、哪里能遛狗、哪里晚上风大，都按顺序写在最后一张图里了。#露营 #露营装备 #亲子露营"
+     }
+    ],
+    [
+     {
+      "id": "6a0000000000000000000003",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000003",
+      "type": "image",
+      "title": "=SUM(A1:A9) 露营清单表格",
+      "published_at": "2026-11-15T12:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a3",
+       "name": "@表格控C"
+      },
+      "metrics": {
+       "likes": 40,
+       "comments": 2,
+       "shares": 1,
+       "favorites": 66
+      }
+     }
+    ]
+   ],
+   "account": [
+    [
+     {
+      "id": "6a000000000000000000000a",
+      "url": "https://www.xiaohongshu.com/explore/6a000000000000000000000a",
+      "type": "image",
+      "title": "冬季露营睡袋怎么选",
+      "published_at": "2026-11-17T02:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000b1"
+      },
+      "metrics": {
+       "likes": 800,
+       "comments": 120,
+       "shares": 30,
+       "favorites": 500
+      }
+     },
+     {
+      "id": "6a000000000000000000000b",
+      "url": "https://www.xiaohongshu.com/explore/6a000000000000000000000b",
+      "type": "image",
+      "title": "评论区抽 3 位送折叠椅",
+      "published_at": "2026-11-12T02:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000b1"
+      },
+      "metrics": {
+       "likes": 1500,
+       "comments": 2100,
+       "shares": 40,
+       "favorites": 300
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "run_at": "2026-11-19T08:00:00Z",
+   "keyword": [
+    [
+     {
+      "id": "6a0000000000000000000004",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000004",
+      "type": "image",
+      "title": "第一次露营就下雨了",
+      "published_at": "2026-11-18T21:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a4",
+       "name": "露营日记D"
+      },
+      "metrics": {
+       "likes": 900,
+       "comments": 88,
+       "shares": 12,
+       "favorites": 150
+      }
+     },
+     {
+      "id": "6a0000000000000000000001",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000001",
+      "type": "image",
+      "title": "露营新手必看｜天幕怎么选",
+      "published_at": "2026-11-17T10:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a1",
+       "name": "露营日记A"
+      },
+      "metrics": {
+       "likes": 180,
+       "comments": 15,
+       "shares": 4,
+       "favorites": 140
+      }
+     }
+    ],
+    [
+     {
+      "id": "6a0000000000000000000002",
+      "url": "https://www.xiaohongshu.com/explore/6a0000000000000000000002",
+      "type": "video",
+      "title": "",
+      "published_at": "2026-11-16T07:30:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000a2",
+       "name": "山野博主B"
+      },
+      "metrics": {
+       "likes": 6200,
+       "comments": 360,
+       "shares": 300,
+       "favorites": 5400
+      },
+      "text": "周末带娃露营全记录\n\n装备清单：天幕、蛋卷桌、折叠椅、炉头、气罐、睡袋、防潮垫……每一样都写了价格和踩过的坑，照着买不会错，收藏起来下次出发前对一遍。另外附上我们一家三口这两年去过的六个营地，哪里有热水、哪里能遛狗、哪里晚上风大，都按顺序写在最后一张图里了。#露营 #露营装备 #亲子露营"
+     }
+    ]
+   ],
+   "account": [
+    [
+     {
+      "id": "6a000000000000000000000c",
+      "url": "https://www.xiaohongshu.com/explore/6a000000000000000000000c",
+      "type": "image",
+      "title": "新品：充气帐篷 60 秒搭好",
+      "published_at": "2026-11-19T02:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000b1"
+      },
+      "metrics": {
+       "likes": 30,
+       "comments": 5,
+       "shares": 1,
+       "favorites": 12
+      }
+     },
+     {
+      "id": "6a000000000000000000000a",
+      "url": "https://www.xiaohongshu.com/explore/6a000000000000000000000a",
+      "type": "image",
+      "title": "冬季露营睡袋怎么选",
+      "published_at": "2026-11-17T02:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000b1"
+      },
+      "metrics": {
+       "likes": 800,
+       "comments": 120,
+       "shares": 30,
+       "favorites": 500
+      }
+     },
+     {
+      "id": "6a000000000000000000000b",
+      "url": "https://www.xiaohongshu.com/explore/6a000000000000000000000b",
+      "type": "image",
+      "title": "评论区抽 3 位送折叠椅",
+      "published_at": "2026-11-12T02:00:00.000Z",
+      "author": {
+       "id": "5f00000000000000000000b1"
+      },
+      "metrics": {
+       "likes": 1600,
+       "comments": 2900,
+       "shares": 41,
+       "favorites": 320
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

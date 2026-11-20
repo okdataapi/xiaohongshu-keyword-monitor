@@ -1,0 +1,17 @@
+Xiaohongshu monitor run 2026-11-19T08:00:00Z (previous run 2026-11-18T08:00:00Z)
+  keyword:露营 装备                             3 notes
+  account:5f00000000000000000000b1 (露营品牌E)  3 notes
+
+New since the last run: 2
+  900 likes · 露营日记D · posted 2026-11-18 · 第一次露营就下雨了
+    https://www.xiaohongshu.com/explore/6a0000000000000000000004
+  30 likes · 露营品牌E · posted 2026-11-19 · 新品：充气帐篷 60 秒搭好
+    https://www.xiaohongshu.com/explore/6a000000000000000000000c
+
+Biggest movers since the last run (likes + saves + comments):
+  +2,450 interactions (+25.8%) · 山野博主B · now 6,200 likes, 5,400 saves, 360 comments · 周末带娃露营全记录 装备清单：天幕、蛋卷桌、折叠椅、炉头、气罐、睡袋、防潮垫……
+    https://www.xiaohongshu.com/explore/6a0000000000000000000002
+  +920 interactions (+23.6%) · 露营品牌E · now 1,600 likes, 320 saves, 2,900 comments · 评论区抽 3 位送折叠椅
+    https://www.xiaohongshu.com/explore/6a000000000000000000000b
+  +126 interactions (+60.3%) · 露营日记A · now 180 likes, 140 saves, 15 comments · 露营新手必看｜天幕怎么选
+    https://www.xiaohongshu.com/explore/6a0000000000000000000001

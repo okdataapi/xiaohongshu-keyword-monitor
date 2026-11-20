@@ -1,0 +1,67 @@
+name: monitor
+
+# Takes one snapshot a day and commits data/snapshots.csv back to the repository.
+# Set what to monitor under Settings -> Secrets and variables -> Actions -> Variables, one entry per line:
+#   KEYWORDS  search keywords, e.g. "露营装备" and "防晒霜 推荐" on two lines
+#   ACCOUNTS  account ids or profile links, optionally with =NAME, e.g. "562f892fe00dd8540fd94691=迪卡侬DECATHLON"
+#   SORT      latest, popular or general (default latest)
+#   PAGES     pages per keyword or account (default 1)
+#   REPORT_LANG  en or zh (default en)
+# With neither KEYWORDS nor ACCOUNTS set, it monitors 露营装备 and the DECATHLON account.
+# The key goes in the repository secret OKDATA_API_KEY.
+
+on:
+  schedule:
+    - cron: "23 0 * * *"   # every day at 00:23 UTC, 08:23 in China
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: monitor
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Take a snapshot
+        env:
+          OKDATA_API_KEY: ${{ secrets.OKDATA_API_KEY }}
+          KEYWORDS: ${{ vars.KEYWORDS }}
+          ACCOUNTS: ${{ vars.ACCOUNTS }}
+          SORT: ${{ vars.SORT || 'latest' }}
+          PAGES: ${{ vars.PAGES || '1' }}
+          REPORT_LANG: ${{ vars.REPORT_LANG || 'en' }}
+        run: |
+          if [ -z "$OKDATA_API_KEY" ]; then
+            echo "::notice::Add an OKDATA_API_KEY repository secret to start monitoring."
+            exit 0
+          fi
+          if [ -z "$KEYWORDS$ACCOUNTS" ]; then
+            KEYWORDS="露营装备"
+            ACCOUNTS="562f892fe00dd8540fd94691=迪卡侬DECATHLON"
+          fi
+          args=()
+          while IFS= read -r line; do [ -n "${line// }" ] && args+=(--keyword "$line"); done <<< "$KEYWORDS"
+          while IFS= read -r line; do [ -n "${line// }" ] && args+=(--account "$line"); done <<< "$ACCOUNTS"
+          rc=0
+          python monitor.py "${args[@]}" --sort "$SORT" --pages "$PAGES" --lang "$REPORT_LANG" --out data \
+            > "$RUNNER_TEMP/report.txt" || rc=$?
+          cat "$RUNNER_TEMP/report.txt"
+          { echo '```'; cat "$RUNNER_TEMP/report.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
+      - name: Commit the CSV
+        if: always()
+        run: |
+          [ -f data/snapshots.csv ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/snapshots.csv   # data/ is in .gitignore for local runs
+          git diff --cached --quiet && exit 0
+          git commit -m "data: Xiaohongshu snapshot $(date -u +%F)"
+          git pull --rebase
+          git push
